@@ -14,7 +14,7 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
 
 before_script:
-  - docker-compose up --build -d
+  - docker-compose up --build -d nginx
 
 script:
   - docker-compose run users-service python manage.py test
